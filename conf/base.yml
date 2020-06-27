@@ -1,0 +1,27 @@
+# Dataset
+train_path: .data/train.csv
+test_path: .data/test.csv
+
+# Hyper parameter
+backbone: resnet18
+shuffle: false
+drop_last: false
+
+epochs: 80
+batch_size: 80
+num_workers: 3
+lr: 0.1
+momentum: 0.9
+num_classes: 10
+train_rate: 0.80
+
+step_size: 5
+gamma: 0.90
+
+# Result
+out_file: submit.csv
+
+# Summary
+runtime_id: null
+sum_freq: 200
+sum_validate_freq: 50
