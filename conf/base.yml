@@ -4,19 +4,19 @@ test_path: .data/test.csv
 
 # Hyper parameter
 backbone: resnet18
-shuffle: false
+enable_gcn: true
 drop_last: false
 
-epochs: 80
+epochs: 100
 batch_size: 80
-num_workers: 3
-lr: 0.1
+num_workers: 1
+lr: 0.01
 momentum: 0.9
 num_classes: 10
 train_rate: 0.80
 
-step_size: 5
-gamma: 0.90
+step_size: 10
+gamma: 0.95
 
 # Result
 out_file: submit.csv
